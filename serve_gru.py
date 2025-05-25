@@ -6,10 +6,12 @@ from huggingface_hub import hf_hub_download
 
 # --- descarga desde tu Space/repo de HF ---
 MODEL_PATH = hf_hub_download(
-    repo_id="robertkm23/chat_bot", filename="chatbot_seq2seq.keras"
+    repo_id="robertkm23/chat_bot", filename="chatbot_seq2seq.keras",
+    repo_type="model"
 )
 TOK_PATH = hf_hub_download(
-    repo_id="robertkm23/chat_bot", filename="tokenizer.json"
+    repo_id="robertkm23/chat_bot", filename="tokenizer.json",
+    repo_type="model"
 )
 MAXLEN    = 22
 START, END = "<start>", "<end>"
