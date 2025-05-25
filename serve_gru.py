@@ -1,9 +1,15 @@
 # serve_gru.py ────────────────────────────────────────────────
 import re, numpy as np, tensorflow as tf
 from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing.text import tokenizer_from_json
+from tensorflow.keras.preprocessing.text import tokenizer_from_jsonfrom huggingface_hub import hf_hub_download  # +++
 
-MODEL_PATH, TOK_PATH = "chatbot_seq2seq.keras", "tokenizer.json"
+# --- descarga desde tu Space/repo de HF ---
+MODEL_PATH = hf_hub_download(
+    repo_id="robertkm23/chat_bot", filename="chatbot_seq2seq.keras"
+)
+TOK_PATH = hf_hub_download(
+    repo_id="robertkm23/chat_bot", filename="tokenizer.json"
+)
 MAXLEN    = 22
 START, END = "<start>", "<end>"
 

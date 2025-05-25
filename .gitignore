@@ -188,3 +188,8 @@ venv/Lib/site-packages/cachetools/__pycache__/keys.cpython-310.pyc
 venv/Lib/site-packages/cachetools/_decorators.py
 venv/Lib/site-packages/cachetools/func.py
 venv/Lib/site-packages/cachetools/keys.py
+.idea/vcs.xml
+.idea/modules.xml
+.idea/misc.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/chatbot_gru.iml
