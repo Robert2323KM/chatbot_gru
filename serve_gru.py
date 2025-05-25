@@ -1,7 +1,8 @@
 # serve_gru.py ────────────────────────────────────────────────
 import re, numpy as np, tensorflow as tf
 from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing.text import tokenizer_from_jsonfrom huggingface_hub import hf_hub_download  # +++
+from tensorflow.keras.preprocessing.text import tokenizer_from_json
+from huggingface_hub import hf_hub_download
 
 # --- descarga desde tu Space/repo de HF ---
 MODEL_PATH = hf_hub_download(
