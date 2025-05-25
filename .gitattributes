@@ -1,3 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 chatbot_seq2seq.keras filter=lfs diff=lfs merge=lfs -text
+chatbot_seq2seq.keras/** filter=lfs diff=lfs merge=lfs -text
